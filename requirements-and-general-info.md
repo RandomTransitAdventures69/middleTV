@@ -30,7 +30,7 @@ TV OS works best on standard x86_64 computers.
 ### Raspberry Pi 4/5
 **ARM64 support**
 
-Raspberry Pi support is planned and depends on available dependencies.
+Raspberry Pi support (since 1. i have a few pis, 2. theyre mine jeff geerling and 3, its linux so it might work?????????)
 
 ### Repurposed Laptops
 
@@ -43,10 +43,9 @@ Older laptops can be converted into TV OS systems.
 | Architecture | Status |
 |---|---|
 | x86_64 | ✅ Recommended |
-| ARM64 | never coming |
+| ARM64 (windows) | never coming lol |
 | Apple Silicon | 🟡 Planned |
 | Intel macOS | 🟡 Planned |
-| Windows x64 | 🟡 Planned |
 
 ---
 
@@ -62,7 +61,6 @@ Some features, such as web-based apps, may require additional dependencies.
 
 The installer currently requires:
 
-- `apt` package manager
 - Debian-based distribution
 - Internet access
 - Permission to install system packages
@@ -118,7 +116,7 @@ TV OS includes a collection of TV-friendly applications designed for keyboard na
 | ▶️ YouTube | ✅ Available | Watch YouTube using an embedded browser |
 | 🎵 YouTube Music | ✅ Available | Listen to YouTube Music using an embedded browser |
 | ⚙ Settings | 🟡 In Development | Configure TV OS settings |
-| 🖥 Server Dashboard | 🟡 In Development | Monitor local servers and services |
+| 🖥 Server Dashboard |  never lol its too many tokens | Monitor local servers and services |
 
 ---
 
@@ -133,7 +131,7 @@ TV OS includes a collection of TV-friendly applications designed for keyboard na
 | 🎮 Game Launcher | Planned | Launch games and emulators |
 | 📡 Network Tools | Planned | View network information and diagnostics |
 | 🔔 Notifications | Planned | System notifications |
-| ✈️ ADS-B |Planned | flightradar24 in a cef window |
+
 
 
 ---
