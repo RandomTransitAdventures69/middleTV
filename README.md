@@ -6,10 +6,10 @@
 (aka python)
 
 FAQ:
-Q: what is this
-A: the TV OS for any os
-Q: why is v2 (beta) a mac app
-A: the mac users get to use it now, be grateful i even made this >:(
+- Q: what is this
+- A: the TV OS for any os
+- Q: why is v2 (beta) a mac app
+- A: the mac users get to use it now, be grateful i even made this >:(
 
 Screenshots:
 <img width="1280" height="720" alt="middletv-profiles-v2" src="https://github.com/user-attachments/assets/a4fd39e1-c7a5-4836-8335-6e3de04a69aa" />
