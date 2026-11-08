@@ -1,4 +1,4 @@
-# MiddleTV — Full UI, Native Apps, and System Integration Specification
+# wait fuck this wasnt supposed to be here oh well uh hi
 
 You are working on MiddleTV, a fullscreen TV-style operating system and launcher built with Python and PySide6.
 
@@ -657,6 +657,7 @@ The goal is a TV-oriented version of KDE Plasma's functionality, built around Mi
 
 The latest screenshot is the default UI reference.
 
-The old smiley-face UI should not replace the new default.
+The old verity UI should not replace the new default.
 
 Preserve the existing functionality and build on the current project rather than starting over.
+
