@@ -1,0 +1,17 @@
+{
+    "wallpaper": "",
+    "theme": "dark",
+    "ui_theme": "modern",
+    "accent_color": "blue",
+    "fullscreen": true,
+    "volume": 75,
+    "language": "en-US",
+    "youtube_api_key": "",
+    "spotify_client_id": "",
+    "primary_media_server": "",
+    "theme_wallpapers": {
+        "modern": "",
+        "aero": "",
+        "terminal": ""
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "region": "United States",
+    "time_zone": "Eastern Time",
+    "automatic_updates": true,
+    "resolution": "3840 \u00d7 2160",
+    "refresh_rate": "120 Hz",
+    "ui_scale": "100%",
+    "connection": "Ethernet",
+    "ip_address": "Automatic",
+    "dns": "Automatic",
+    "tailscale": true,
+    "keyboard": true,
+    "hdmi_cec": false,
+    "usb_remote": true,
+    "bluetooth_remote": false,
+    "kiosk_escape": "Ctrl+Shift+Esc",
+    "web_interface": true,
+    "web_port": "3000",
+    "remote_access": false,
+    "random_facts": true,
+    "notifications_enabled": true,
+    "startup_check_installation": true
+}

@@ -1,0 +1,441 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>MiddleTV Jellyfin</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+
+            background:
+                radial-gradient(
+                    circle at top,
+                    #20252d 0%,
+                    #101216 45%,
+                    #08090b 100%
+                );
+
+            color: white;
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            overflow: hidden;
+        }
+
+
+        .setup {
+
+            width: 760px;
+
+            max-width: 90vw;
+
+            padding: 55px;
+
+            background:
+                rgba(
+                    25,
+                    27,
+                    32,
+                    0.94
+                );
+
+            border:
+                1px solid
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.10
+                );
+
+            border-radius: 28px;
+
+            box-shadow:
+                0 30px 80px
+                rgba(
+                    0,
+                    0,
+                    0,
+                    0.55
+                );
+        }
+
+
+        .logo {
+
+            font-size: 46px;
+
+            font-weight: 800;
+
+            margin-bottom: 8px;
+        }
+
+
+        .subtitle {
+
+            font-size: 24px;
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.62
+                );
+
+            margin-bottom: 45px;
+        }
+
+
+        label {
+
+            display: block;
+
+            font-size: 22px;
+
+            font-weight: 700;
+
+            margin-bottom: 12px;
+        }
+
+
+        input {
+
+            width: 100%;
+
+            height: 72px;
+
+            padding:
+                0
+                22px;
+
+            border-radius: 16px;
+
+            border:
+                2px solid
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.14
+                );
+
+            background:
+                rgba(
+                    0,
+                    0,
+                    0,
+                    0.35
+                );
+
+            color: white;
+
+            font-size: 24px;
+
+            outline: none;
+        }
+
+
+        input:focus {
+
+            border-color:
+                #6aaeff;
+
+            box-shadow:
+                0 0 0 4px
+                rgba(
+                    106,
+                    174,
+                    255,
+                    0.16
+                );
+        }
+
+
+        button {
+
+            margin-top: 30px;
+
+            width: 100%;
+
+            height: 72px;
+
+            border: none;
+
+            border-radius: 16px;
+
+            background:
+                #4b9cff;
+
+            color: white;
+
+            font-size: 24px;
+
+            font-weight: 800;
+
+            cursor: pointer;
+        }
+
+
+        button:hover,
+        button:focus {
+
+            background:
+                #65aaff;
+
+            outline: none;
+
+            box-shadow:
+                0 0 0 4px
+                rgba(
+                    106,
+                    174,
+                    255,
+                    0.20
+                );
+        }
+
+
+        .error {
+
+            display: none;
+
+            margin-top: 20px;
+
+            padding: 16px;
+
+            border-radius: 12px;
+
+            background:
+                rgba(
+                    255,
+                    70,
+                    70,
+                    0.15
+                );
+
+            color:
+                #ff9b9b;
+
+            font-size: 18px;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <main class="setup">
+
+        <div class="logo">
+            MiddleTV™ Jellyfin
+        </div>
+
+        <div class="subtitle">
+            Let's connect to your Jellyfin server.
+        </div>
+
+
+        <label for="server">
+            Server address
+        </label>
+
+
+        <input
+            id="server"
+            type="text"
+            placeholder="http://192.168.1.100:8096"
+            autocomplete="off"
+            autofocus
+        >
+
+
+        <button
+            id="connect"
+            tabindex="0"
+        >
+            Connect
+        </button>
+
+
+        <div
+            id="error"
+            class="error"
+        >
+            Could not connect to that server.
+        </div>
+
+    </main>
+
+
+    <script>
+
+        const serverInput =
+            document.getElementById(
+                "server"
+            );
+
+        const connectButton =
+            document.getElementById(
+                "connect"
+            );
+
+        const error =
+            document.getElementById(
+                "error"
+            );
+
+
+        function normalizeServer(
+            value
+        ) {
+
+            value =
+                value.trim();
+
+
+            if (!value) {
+                return null;
+            }
+
+
+            value =
+                value.replace(
+                    /\/+$/,
+                    ""
+                );
+
+
+            return value;
+        }
+
+
+        function connect() {
+
+            const server =
+                normalizeServer(
+                    serverInput.value
+                );
+
+
+            if (!server) {
+
+                error.textContent =
+                    "Enter a Jellyfin server address.";
+
+                error.style.display =
+                    "block";
+
+                serverInput.focus();
+
+                return;
+            }
+
+
+            /*
+             * Save the server address.
+             *
+             * The CEF app can read this value
+             * on its next launch.
+             */
+
+            localStorage.setItem(
+                "jellyfin_server",
+                server
+            );
+
+
+            /*
+             * For now, send the user to
+             * Jellyfin Web.
+             *
+             * Later we can replace this with
+             * the actual MiddleTV Jellyfin UI.
+             */
+
+            window.location.href =
+                server;
+        }
+
+
+        connectButton.addEventListener(
+            "click",
+            connect
+        );
+
+
+        serverInput.addEventListener(
+            "keydown",
+            function(event) {
+
+                if (
+                    event.key ===
+                    "Enter"
+                ) {
+
+                    connect();
+
+                }
+
+            }
+        );
+
+
+        /*
+         * If this device was already configured,
+         * skip the setup screen.
+         */
+
+        const savedServer =
+            localStorage.getItem(
+                "jellyfin_server"
+            );
+
+
+        if (savedServer) {
+
+            serverInput.value =
+                savedServer;
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
+

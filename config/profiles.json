@@ -1,0 +1,55 @@
+{
+    "active_profile": "richard",
+    "profiles": {
+        "default": {
+            "name": "Default",
+            "picture": "",
+            "wallpaper": ""
+        },
+        "hi": {
+            "name": "hi",
+            "picture": "/Users/randomtransitadventures/Downloads/fian.PNG",
+            "wallpaper": ""
+        },
+        "verity\u2122": {
+            "name": "Verity\u2122",
+            "picture": "/Users/randomtransitadventures/Downloads/images.jpg",
+            "wallpaper": ""
+        },
+        "verut": {
+            "name": "verut",
+            "picture": "/Users/randomtransitadventures/Downloads/IMG_9586.jpg",
+            "wallpaper": ""
+        },
+        "nick": {
+            "name": "Nick",
+            "picture": "",
+            "wallpaper": ""
+        },
+        "ivan": {
+            "name": "Ivan",
+            "picture": "",
+            "wallpaper": ""
+        },
+        "gerald": {
+            "name": "Gerald",
+            "picture": "",
+            "wallpaper": ""
+        },
+        "gary": {
+            "name": "Gary",
+            "picture": "",
+            "wallpaper": ""
+        },
+        "eric": {
+            "name": "Eric",
+            "picture": "",
+            "wallpaper": ""
+        },
+        "richard": {
+            "name": "Richard",
+            "picture": "",
+            "wallpaper": ""
+        }
+    }
+}

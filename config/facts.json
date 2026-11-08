@@ -1,0 +1,29 @@
+{
+    "facts": [
+        {
+            "text": "DNS translates domain names into IP addresses.",
+            "category": "comptia",
+            "enabled": true
+        },
+        {
+            "text": "USB-C is a connector, not a guarantee of USB 3, USB4, or Thunderbolt.",
+            "category": "comptia",
+            "enabled": true
+        },
+        {
+            "text": "i buttered an A320 in a sim\u2122",
+            "category": "nonsense",
+            "enabled": true
+        },
+        {
+            "text": "Gary exists.",
+            "category": "nonsense",
+            "enabled": false
+        },
+        {
+            "text": "hi lol",
+            "category": "custom",
+            "enabled": true
+        }
+    ]
+}

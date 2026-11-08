@@ -1,0 +1,12 @@
+[
+  {"name": "About", "module": "apps.about.app"},
+  {"name": "Settings", "module": "apps.settings.app"},
+  {"name": "Files", "module": "apps.files.app"},
+  {"name": "Profiles", "module": "apps.profiles.app"},
+  {"name": "Clock", "module": "apps.clock.app"},
+  {"name": "Media", "module": "apps.media_server.app", "dynamic_media": true},
+  {"name": "Flight Tracker", "module": "apps.flight_tracker.app"},
+  {"name": "YouTube", "module": "apps.youtube.app"},
+  {"name": "Spotify", "module": "apps.spotify.app"},
+  {"name": "Terminal", "module": "apps.terminal.app"}
+]

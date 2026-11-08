@@ -1,0 +1,18 @@
+# MiddleTV OOBE wiring
+
+Keep your existing main.py structure, but launch OOBE before Launcher when setup is incomplete.
+
+Conceptual flow:
+
+main.py
+  -> check config/oobe.json
+  -> setup_complete == true : Launcher
+  -> otherwise : OOBE
+
+The OOBE app class is:
+    apps.oobe.app.App
+
+The proof-of-concept OOBE writes:
+    config/oobe.json
+
+It does not create Linux users, install packages, enable systemd services, or modify the OS.
