@@ -11,10 +11,9 @@ FAQ:
 - Q: why is v2 (beta) a mac app
 - A: the mac users get to use it now, be grateful i even made this >:(
 
-Screenshots:
-<img width="1280" height="720" alt="middletv-profiles-v2" src="https://github.com/user-attachments/assets/a4fd39e1-c7a5-4836-8335-6e3de04a69aa" />
-<img width="1280" height="720" alt="middletv-home-v2" src="https://github.com/user-attachments/assets/a29bd413-3115-445a-94fc-103c6bde1af2" />
-<img width="1280" height="720" alt="middletv-clock-v2" src="https://github.com/user-attachments/assets/dbd4acc2-5680-484f-a825-95bb8dfa1d1e" />
+new new ui:
+<img width="1920" height="1080" alt="download" src="https://github.com/user-attachments/assets/1f1da0e4-58ea-4a93-b20f-84baa2e9a14b" />
+
 
 
 old UI for context:
