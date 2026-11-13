@@ -9,11 +9,18 @@ Features:
 
 - jellyfin/plex (webUI - native app coming soon
 - spotify (actual app)
--files (native app)
+- files (native app)
 - youtube (native app)
 - flight radar (web app)
 - press "esc" to gonback from ANY app
--
+- native clock app
+- settings app
+- about app
+- profile support
+- profile PICTURE support
+- python
+- Qt
+- spaghetti code
 
 new new ui:
 <img width="1920" height="1080" alt="download" src="https://github.com/user-attachments/assets/1f1da0e4-58ea-4a93-b20f-84baa2e9a14b" />
