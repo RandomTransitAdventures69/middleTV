@@ -1,6 +1,6 @@
 # middleTV
 
-## are you tired of bloat on your TV? are you a cybersecurity professional who hates ads/tracking? middleTV doesnt do that, even if i wanted to (for more info, see [security](whered-all-the-time-go.md)
+## are you tired of bloat on your TV? are you a cybersecurity professional who hates ads/tracking? did you say some choice words about flock cameras? middleTV doesnt do that, even if i wanted to (for more info, see [security](whered-all-the-time-go.md)
 
 ## THE TV OS for ANY os
 (aka python)
