@@ -5,11 +5,15 @@
 ## THE TV OS for ANY os
 (aka python)
 
-FAQ:
-- Q: what is this
-- A: the TV OS for any os
-- Q: why is v2 (beta) a mac app
-- A: the mac users get to use it now, be grateful i even made this >:(
+Features:
+
+- jellyfin/plex (webUI - native app coming soon
+- spotify (actual app)
+-files (native app)
+- youtube (native app)
+- flight radar (web app)
+- press "esc" to gonback from ANY app
+-
 
 new new ui:
 <img width="1920" height="1080" alt="download" src="https://github.com/user-attachments/assets/1f1da0e4-58ea-4a93-b20f-84baa2e9a14b" />
