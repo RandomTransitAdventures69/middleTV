@@ -1,6 +1,6 @@
 # middleTV
 
-## are you tired of bloat on your TV? are you a cybersecurity professional who hates ads/tracking? did you say some choice words about flock cameras? middleTV doesnt do that, even if i wanted to (for more info, see [security](whered-all-the-time-go.md)
+## are you tired of bloat on your TV? are you a cybersecurity professional who hates ads/tracking? did you say some choice words about flock cameras? middleTV doesnt do that, even if i wanted to (for more info, see our [security policy](whered-all-the-time-go.md)
 
 ## THE TV OS for ANY os
 (aka python)
@@ -21,6 +21,11 @@ Features:
 - python
 - Qt
 - spaghetti code
+- bug where opening any app crashes python
+- actual OS coming soon based off fedora atmoninic or kionite or whatever like what was it yeah thats it immutable!
+
+
+
 
 new new ui:
 <img width="1920" height="1080" alt="download" src="https://github.com/user-attachments/assets/1f1da0e4-58ea-4a93-b20f-84baa2e9a14b" />
